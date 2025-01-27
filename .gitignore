@@ -1,10 +1,43 @@
-/_build
-/cover
-/deps
-/doc
-/.fetch
-erl_crash.dump
-*.ez
-*.beam
-/config/*.secret.exs
-.elixir_ls/
+# --- Mix & Elixir ---
+/_build/              # Archivos compilados
+/deps/                # Dependencias descargadas
+/cover/               # Cobertura de pruebas
+/doc/                 # Documentación generada
+/fetch                # Archivos de bloqueo de Mix
+erl_crash.dump        # Dumps si Erlang falla
+*.ez                  # Archivos de Mix archive build
+/tmp/                 # Archivos temporales
+
+# --- Phoenix ---
+/priv/static/assets/  # Archivos de assets generados
+/priv/static/cache_manifest.json  # Cache de assets digeridos
+
+# --- Node.js & NPM ---
+npm-debug.log        # Log de errores de npm
+/assets/node_modules/ # Dependencias de Node.js
+
+# --- IDEs & Editores ---
+# JetBrains (IntelliJ, WebStorm, etc.)
+.idea/
+*.iml
+
+# Visual Studio Code
+.vscode/
+
+# Vim, Nano, Emacs y otros editores
+*.swp
+*.swo
+*~
+
+# --- Archivos Exportables & Generados ---
+*.tar                 # Paquetes exportados
+*.zip
+*.gz
+*.7z
+*.bak                 # Archivos de backup
+*.log                 # Archivos de logs
+*.tmp                 # Archivos temporales
+
+# --- Otros ---
+.DS_Store             # MacOS metadata files
+Thumbs.db             # Windows metadata files
