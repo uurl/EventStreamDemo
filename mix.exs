@@ -57,7 +57,11 @@ defmodule EventStreamDemo.MixProject do
       {:bandit, "~> 1.5"},
       {:broadway, "~> 1.0"},
       {:broadway_sqs, "~> 0.7"},
-      {:req, "~> 0.4"}
+      {:broadway_kafka, "~> 0.3"},
+      #{:broadway_kafka, github: "dashbitco/broadway_kafka"}, # Broadway Kafka connector
+      {:kafka_ex, "~> 0.12"}, # Cliente Kafka para Elixir
+      {:req, "~> 0.4"},
+      {:timex, "~> 3.7"}
     ]
   end
 

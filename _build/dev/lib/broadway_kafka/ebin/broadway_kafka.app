@@ -1,0 +1,13 @@
+{application,broadway_kafka,
+             [{modules,['Elixir.BroadwayKafka',
+                        'Elixir.BroadwayKafka.Acknowledger',
+                        'Elixir.BroadwayKafka.Allocator',
+                        'Elixir.BroadwayKafka.BrodClient',
+                        'Elixir.BroadwayKafka.KafkaClient',
+                        'Elixir.BroadwayKafka.Producer']},
+              {optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger,broadway,brod,
+                             telemetry]},
+              {description,"A Kafka connector for Broadway"},
+              {registered,[]},
+              {vsn,"0.4.4"}]}.

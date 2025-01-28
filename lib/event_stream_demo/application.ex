@@ -17,7 +17,8 @@ defmodule EventStreamDemo.Application do
       # {EventStreamDemo.Worker, arg},
       # Start to serve requests, typically the last entry
       EventStreamDemoWeb.Endpoint,
-      EventStreamDemo.CryptoBroadway
+      EventStreamDemo.CryptoBroadway,
+      EventStreamDemo.CryptoBroadwayKafka # Consumidor de Kafka
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
